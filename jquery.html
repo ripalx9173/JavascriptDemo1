@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery.min.js">
+    </script>
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        alert("hello jquery");
+        window.console && console.log('hello jquery hre...');
+      });
+      $(window).resize(function(){
+        console.log('.resize() called. width='+
+        $(window).width()+'height='+$(window).height());
+      });
+    </script>
+    <p id="para"> here is some first jquery sample code</p>
+<a href="#" onclick="$('#para').css('background-color','red'); return false;">red</a>
+  </body>
+</html>
